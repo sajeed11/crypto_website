@@ -22,11 +22,10 @@ const HomePage = () => {
         <Col span={12}>
           <Statistic
             title="Total Cryptocurrencies"
-            value={globalStats.total}
+            value={millify(globalStats.total)}
           ></Statistic>
         </Col>
         <Col span={12}>
-          x
           <Statistic
             title="Total Exchanges"
             value={millify(globalStats.totalExchanges)}
