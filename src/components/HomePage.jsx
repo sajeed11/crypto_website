@@ -12,7 +12,7 @@ const HomePage = () => {
 
   if (isFetching) return "Loading..";
 
-  console.log(data);
+  console.log(globalStats);
   return (
     <>
       <Title level={2} className="heading">
@@ -22,7 +22,7 @@ const HomePage = () => {
         <Col span={12}>
           <Statistic
             title="Total Cryptocurrencies"
-            value={millify(globalStats.total)}
+            value={globalStats.total}
           ></Statistic>
         </Col>
         <Col span={12}>
